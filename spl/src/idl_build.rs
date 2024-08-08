@@ -28,5 +28,7 @@ impl_idl_build!(crate::stake::StakeAccount);
 impl_idl_build!(crate::token::Mint);
 impl_idl_build!(crate::token::TokenAccount);
 
+#[cfg(feature = "token_2022")]
 impl_idl_build!(crate::token_interface::Mint);
+#[cfg(feature = "token_2022")]
 impl_idl_build!(crate::token_interface::TokenAccount);
